@@ -1,0 +1,192 @@
+.location{
+    padding-top: 160px;
+    padding-bottom: 200px;
+    position: relative;
+    
+    &__list{
+        margin: 0;
+        padding: 0;
+        display: flex;
+        align-items: center;
+        list-style-type: none;
+    }
+    
+    &__item{
+        width: 350px;
+    }
+    
+    &__item:nth-child(even){
+        margin-left: 30px;
+        margin-right: 30px;
+    }
+    
+    &__item:nth-child(1) > &__item-wrapper::before{
+        content: "";
+        width: 96px;
+        height: 96px;
+        display: block;
+        position: relative;
+        z-index: 1;
+        margin-bottom: 49px;
+        background-image: url(../../images/first-item-before.png);
+        background-repeat: no-repeat;
+        background-position: left;
+        background-size: 96px 96px;
+    }
+    
+    &__item:nth-child(2) > &__item-wrapper::before{
+        content: "";
+        width: 96px;
+        height: 96px;
+        display: block;
+        position: relative;
+        z-index: 1;
+        margin-bottom: 49px;
+        background-image: url(../../images/second-item-before.png);
+        background-repeat: no-repeat;
+        background-position: left;
+        background-size: 96px 96px;
+    }
+    
+    &__item:nth-child(3) > &__item-wrapper::before{
+        content: "";
+        width: 96px;
+        height: 96px;
+        display: block;
+        position: relative;
+        z-index: 1;
+        margin-bottom: 49px;
+        background-image: url(../../images/third-item-before.png);
+        background-repeat: no-repeat;
+        background-position: left;
+        background-size: 96px 96px;
+    }
+    
+    &__title{
+        margin: 0;
+        padding: 0;
+        margin-bottom: 27px;
+        font-family: "Space Mono";
+        font-style: normal;
+        font-weight: bold;
+        font-size: 24px;
+        line-height: 28px;
+        color: #495567;
+    }
+    
+    &__text{
+        margin: 0;
+        padding: 0;
+        font-family: "Lexend Deca";
+        font-style: normal;
+        font-weight: normal;
+        font-size: 15px;
+        line-height: 25px;
+        color: #939caa;
+        max-width: 350px;
+    }
+}
+
+.location::before{
+    content: "";
+    width: 974px;
+    height: 15px;
+    display: block;
+    position: absolute;
+    top: 208px;
+    left: -125px;
+    z-index: 0;
+    background-image: url(../../images/ul-before.png);
+    background-repeat: no-repeat;
+    background-position: top left;
+    background-size: 974px 15px;
+}
+
+@media only screen and(max-width: 768px){
+    .location{
+        padding-top: 122px;
+        padding-bottom: 145px;
+
+        &__list{
+            flex-direction: column;
+        }
+
+        &__item{
+            margin: 0;
+            width: 573px;
+            margin-bottom: 40px;
+        }
+
+        &__item-wrapper{
+            display: flex;
+            align-items: center;
+        }
+
+        &__item:nth-child(1) > &__item-wrapper::before{
+            margin: 0;
+            margin-right: 79px; 
+        }
+
+        &__item:nth-child(2) > &__item-wrapper::before{
+            margin: 0;
+            margin-right: 79px; 
+        }
+        &__item:nth-child(3) > &__item-wrapper::before{
+            margin: 0;
+            margin-right: 80px; 
+        }
+
+        &__text{
+            max-width: 398px;
+        }
+    }
+
+    .location::before{
+        top: 248px;
+        left: 128;
+        width: 512px;
+        transform: rotate(90deg);
+    }
+}
+
+@media only screen and(max-width: 375px){
+    .location{
+        padding: 0;
+        padding: 120px 0;
+
+        &__item{
+            width: 311px;
+        }
+
+        &__item-wrapper{
+            flex-direction: column;
+            // justify-content: center;
+        }
+
+        &__item:nth-child(1) > &__item-wrapper::before{
+            margin: 0;
+            margin-bottom: 24px;
+        }
+
+        &__item:nth-child(2) > &__item-wrapper::before{
+            margin: 0;
+            margin-bottom: 24px; 
+        }
+        &__item:nth-child(3) > &__item-wrapper::before{
+            margin: 0;
+            margin-bottom: 24px; 
+        }
+
+        &__title{
+            text-align: center;
+        }
+
+        &__text{
+            text-align: center;
+        }
+    }
+
+    .location::before{
+        display: none;
+    }
+}

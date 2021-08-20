@@ -1,0 +1,212 @@
+.riding{
+    position: relative;
+    margin-bottom: 160px;
+    
+    &__wrapper{
+        width: 100%;
+        display: flex;
+    }
+    
+    &__inner{
+        padding-top: 75px;
+        padding-bottom: 76px;
+        max-width: 480px;
+    }
+    
+    &__title{
+        margin: 0;
+        padding: 0;
+        margin-bottom: 24px;
+        font-family: "Space Mono";
+        font-style: normal;
+        font-weight: bold;
+        font-size: 48px;
+        line-height: 48px;
+        color: #495567;
+    }
+    
+    &__text{
+        margin: 0;
+        padding: 0;
+        // max-width: 445px;
+        margin-bottom: 54px;
+        font-family: "Lexend Deca";
+        font-style: normal;
+        font-weight: normal;
+        font-size: 15px;
+        line-height: 25px;
+        color: #939caa;
+    }
+
+    &:nth-child(2){
+        background-image: url(../../images/riding-bgc-one.png);
+        background-repeat: no-repeat;
+        background-position: right center;
+        background-size: 101px 445px;
+        
+        & > .container > .riding__wrapper{
+            background-image: url(../../images/riding-one.jpg);
+            background-repeat: no-repeat;
+            background-position: right center;
+            background-size: 445px 445px;
+        }
+        
+        &::before{
+            content: "";
+            width: 740px;
+            height: 150px;
+            position: absolute;
+            right: 0;
+            bottom: 0;
+            background-image: url(../../images/third-section-before-one.png);
+            background-repeat: no-repeat;
+            background-size: 740px 150px;
+            background-position: 0 0;
+        }
+    }
+
+    &:nth-child(3){
+        background-image: url(../../images/riding-bgc-two.png);
+        background-repeat: no-repeat;
+        background-position: left center;
+        background-size: 101px 445px;
+        
+        &::before{
+            content: "";
+            width: 356px;
+            height: 137px;
+            position: absolute;
+            left: 0;
+            top: 0;
+            background-image: url(../../images/third-section-before-two.png);
+            background-repeat: no-repeat;
+            background-size: 356px 137px;
+            background-position: 0 0;
+        }
+        
+        & > .container > .riding__wrapper{
+            justify-content: flex-end;
+            background-image: url(../../images/riding-two.jpg);
+            background-repeat: no-repeat;
+            background-position: left center;
+            background-size: 445px 445px;
+        }
+    }
+
+    &:nth-child(4){
+        background-image: url(../../images/riding-bgc-three.png);
+        background-repeat: no-repeat;
+        background-position: right center;
+        background-size: 101px 445px;
+        
+        &::before{
+            content: "";
+            width: 360px;
+            height: 138px;
+            position: absolute;
+            right: 0;
+            top: 85px;
+            background-image: url(../../images/third-section-before-three.png);
+            background-repeat: no-repeat;
+            background-size: 360px 138px;
+            background-position: 0 0;
+        }
+        
+        & > .container > .riding__wrapper{
+            background-image: url(../../images/riding-three.jpg);
+            background-repeat: no-repeat;
+            background-position: right center;
+            background-size: 445px 445px;
+        }
+    }
+}
+
+@media only screen and(max-width: 768px){
+    .riding{
+        background-position: top right;
+        
+        &__inner{
+            padding: 0;
+            padding-top: 500px;
+            text-align: center;
+            margin-left: auto;
+            margin-right: auto;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        &:nth-child(2){
+            background-position: top right;
+    
+            & > .container > .riding__wrapper{
+                background-position: top center;
+            }    
+        }
+
+        &:nth-child(3){
+            background-position: top left;
+    
+            & > .container > .riding__wrapper{
+                background-position: top center;
+            }
+        }
+
+        &:nth-child(4){
+            background-position: top right;
+    
+            & > .container > .riding__wrapper{
+                background-position: top center;
+            }
+        }
+    }
+}
+
+@media only screen and(max-width: 375px){
+    .riding{
+        background: none;
+        
+        &__inner{
+            padding: 0;
+            padding-top: 367px;
+        }
+
+        &:nth-child(2){
+            background: none;
+    
+            & > .container > .riding__wrapper{
+                background-size: 311px 311px;
+            }
+            
+            &::before{
+                right: -400px;
+                bottom: 400px;
+            }
+        }
+
+        &:nth-child(3){
+            background: none;
+
+            &::before{
+                left: -100px;
+                top: 0;
+            }
+    
+            & > .container > .riding__wrapper{
+                background-size: 311px 311px;
+            }
+        }
+        &:nth-child(4){
+            background: none;
+    
+            &::before{
+                right: -150px;
+                top: 0;
+            }
+    
+            & > .container > .riding__wrapper{
+                background-size: 311px 311px;
+            }
+        }
+    }
+}
