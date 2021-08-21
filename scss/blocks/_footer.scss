@@ -32,6 +32,10 @@
             display: inline-block;
             margin-left: 18px;
         }
+
+        &-link{
+            text-decoration: none;
+        }
     }
 
     &__list{
@@ -56,7 +60,11 @@
         line-height: 25px;
         color: #939caa;
         text-decoration: none;
-        transition: 00.4s ease all;
+        transition: 0.4s ease all;
+    }
+
+    &__link:hover{
+        color: #fcb72b;
     }
 
     &__content{
@@ -120,7 +128,7 @@
             padding: 88px 0;
             background-position: right bottom;
 
-            &-link{
+            &-links{
                 display: flex;
             }
 

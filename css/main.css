@@ -101,8 +101,8 @@ body {
   line-height: 25px;
   color: #939caa;
   text-decoration: none;
-  -webkit-transition: 00.4s ease all;
-  transition: 00.4s ease all;
+  -webkit-transition: 0.4s ease all;
+  transition: 0.4s ease all;
 }
 
 .header__link:hover {
@@ -219,6 +219,10 @@ body {
   line-height: 25px;
   color: #ffffff;
   max-width: 405px;
+}
+
+.simple__link:hover {
+  background-color: transparent;
 }
 
 @media only screen and (max-width: 768px) {
@@ -721,6 +725,10 @@ body {
   margin-left: 18px;
 }
 
+.footer__top-link {
+  text-decoration: none;
+}
+
 .footer__list {
   margin: 0;
   padding: 0;
@@ -748,8 +756,12 @@ body {
   line-height: 25px;
   color: #939caa;
   text-decoration: none;
-  -webkit-transition: 00.4s ease all;
-  transition: 00.4s ease all;
+  -webkit-transition: 0.4s ease all;
+  transition: 0.4s ease all;
+}
+
+.footer__link:hover {
+  color: #fcb72b;
 }
 
 .footer__content {
@@ -824,7 +836,7 @@ body {
     padding: 88px 0;
     background-position: right bottom;
   }
-  .footer__top-link {
+  .footer__top-links {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;

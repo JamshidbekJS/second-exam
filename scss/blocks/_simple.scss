@@ -65,6 +65,10 @@
         color: #ffffff;
         max-width: 405px;
     }
+
+    &__link:hover{
+        background-color: transparent;
+    }
 }
 
 @media only screen and(max-width: 768px){
