@@ -141,7 +141,11 @@
     
             & > .container > .riding__wrapper{
                 background-position: top center;
-            }    
+            }
+            
+            &::before{
+                bottom: 350px;
+            }
         }
 
         &:nth-child(3){

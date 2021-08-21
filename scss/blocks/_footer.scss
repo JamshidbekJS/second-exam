@@ -11,7 +11,6 @@
         &-inner{
             display: flex;
             align-items: center;
-            // flex-direction: column;
             justify-content: space-between;
         }
 
@@ -25,7 +24,6 @@
             font-size: 48px;
             line-height: 48px;
             color: #ffffff;
-            // text-align: center;
         }
 
         &-img{
@@ -121,7 +119,7 @@
     }
 }
 
-@media only screen and(max-width: 475px){
+@media only screen and(max-width: 660px){
     .footer{
         
         &__top{
@@ -130,6 +128,15 @@
 
             &-links{
                 display: flex;
+                flex-wrap: wrap;
+                // justify-content: space-between;
+                max-width: 260px;
+                margin-left: auto;
+                margin-right: auto;
+            }
+
+            &-link:nth-child(2){
+                margin-left: 18px;
             }
 
             &-img:nth-child(1){

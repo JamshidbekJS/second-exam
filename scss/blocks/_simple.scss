@@ -65,10 +65,6 @@
         color: #ffffff;
         max-width: 405px;
     }
-
-    &__link:hover{
-        background-color: transparent;
-    }
 }
 
 @media only screen and(max-width: 768px){
@@ -111,7 +107,7 @@
     }
 }
 
-@media only screen and(max-width: 475px){
+@media only screen and(max-width: 660px){
     .simple{
         padding: 0;
         background-position: right center;
@@ -127,6 +123,15 @@
             display: none;
         }
 
+        &__wrapper::after{
+            top: 448px;
+            right: 280px;
+        }
+    }
+}
+
+@media only screen and(max-width: 375px){
+    .simple{
         &__wrapper::after{
             top: 478px;
             right: 240px;

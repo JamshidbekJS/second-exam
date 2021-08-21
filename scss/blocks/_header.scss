@@ -74,13 +74,13 @@
     }
 
     &__link-right:hover{
-        background-color: #ffffff;
+        background-color: transparent;
         color: #fcb72b;
         border: 3px solid #fcb72b;
     }
 }
 
-@media only screen and(max-width: 475px){
+@media only screen and(max-width: 660px){
     .header{
         &__menu{
             display: block;
