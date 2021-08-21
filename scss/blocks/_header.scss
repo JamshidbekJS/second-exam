@@ -85,13 +85,23 @@
         &__menu{
             display: block;
             border: none;
-            margin-right: 94px;
             background-image: url(../../images/hamburger.svg);
             cursor: pointer;
         }
 
         &__inner{
             display: none;
+        }
+
+        &__img{
+            margin: 0;
+            width: 80px;
+            height: 20px;
+        }
+
+        &__logo{
+            margin-left: auto;
+            margin-right: auto;
         }
     }
 }
